@@ -1,0 +1,382 @@
+  body {
+    background-color: rgb(38, 121, 134);
+  }
+  h1 {
+    color: rgb(0, 0, 0); 
+    font-size: 35px; 
+    text-align: center;
+  }
+  h2 {
+    color: rgb(0, 0, 0); 
+    font-size:30px; 
+    text-align:center;
+    z-index: 1;
+  }
+  p {
+    color: rgb(0, 0, 0); 
+    font-size: 25px; 
+    text-align: center;
+  }
+  .div2 {
+    border: 3px outset rgb(0, 0, 0);
+    padding: 15px;
+    margin: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: rgb(25, 108, 106);    
+  }
+  .div3 {
+    border: 3px outset rgb(0, 0, 0);
+    padding: 15px;
+    margin: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: rgb(25, 108, 106);    
+  }
+
+  /*Grid oppsett*/
+
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-template-areas: 
+      'menu menu menu menu menu menu'
+      'header header header header header header' 
+      'tekst tekst tekst bilde bilde bilde'
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+  }
+  .grid-container-kp {
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-template-areas: 
+      'menu menu menu menu menu menu'
+      'header header header header header header' 
+      'pftekst pftekst pftekst pfbilde pfbilde pfbilde'
+      'pftekst2 pftekst2 pftekst2 pfbilde2 pfbilde2 pfbilde2'
+      'pftekst3 pftekst3 pftekst3 pfbilde3 pfbilde3 pfbilde3'
+      'footer footer footer footer footer footer';
+  }
+  .grid-container-pogh {
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-template-areas: 
+      'menu menu menu menu menu menu'
+      'header header header header header header' 
+      'pftekst pftekst pftekst pfbilde pfbilde pfbilde'
+      'pftekst2 pftekst2 pftekst2 pfbilde2 pfbilde2 pfbilde2'
+      'pftekst3 pftekst3 pftekst3 pftekst3 pftekst3 pftekst3'
+      'pfbilde3 pfbilde3 pfbilde3 pfbilde3 pfbilde3 pfbilde3'
+      'pftekst4 pftekst4 pftekst4 pfbilde4 pfbilde4 pfbilde4'
+      'footer footer footer footer footer footer';
+  }
+  .grid-container-tf {
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-template-areas: 
+      'menu menu menu menu menu menu'
+      'header header header header header header' 
+      'pftekst pftekst pftekst pfbilde pfbilde pfbilde'
+      'pftekst2 pftekst2 pftekst2 pfbilde2 pfbilde2 pfbilde2'
+      'pftekst3 pftekst3 pftekst3 pfbilde3 pfbilde3 pfbilde3'
+      'footer footer footer footer footer footer';
+  }
+
+  /*Grid elementer*/
+  .header {
+    grid-area: header;
+    background-color: rgb(25, 108, 106);
+    border: 3px outset rgb(0, 0, 0);
+    padding: 10px;
+  }
+  .tekst {
+    grid-area: tekst;
+    background-color: rgb(25, 108, 106);
+    border: 3px outset rgb(0, 0, 0);
+    padding: 5px;
+  }
+  .bilde {
+    grid-area: bilde;
+    background-color: rgb(25, 108, 106);
+    background-image: url(./img/IMG-1032.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px outset rgb(0, 0, 0);
+    min-height: 333px;
+  }
+  .left {
+    grid-area: left;
+  }
+  .middle {
+    grid-area: middle;
+  }
+  .right {
+    grid-area: right;
+  }
+  .left,
+  .middle,
+  .right {
+    display: block;
+    background-color: rgb(25, 108, 106);
+    min-height: 333px;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: #104746;
+    border: 3px outset rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+  }
+  .pfbilde {
+    grid-area: pfbilde;
+    background-color: rgb(25, 108, 106);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px outset rgb(0, 0, 0);
+    min-height: 333px;
+  }
+  .pfbilde2 {
+    grid-area: pfbilde2;
+    background-color: rgb(25, 108, 106);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px outset rgb(0, 0, 0);
+    min-height: 333px;
+  }
+  .pfbilde3 {
+    grid-area: pfbilde3;
+    background-color: rgb(25, 108, 106);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px outset rgb(0, 0, 0);
+    min-height: 333px;
+  }
+  .pfbilde4 {
+    grid-area: pfbilde4;
+    background-color: rgb(25, 108, 106);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px outset rgb(0, 0, 0);
+    min-height: 333px;
+  }
+  .pftekst {
+    grid-area: pftekst;
+    background-color: rgb(25, 108, 106);
+    border: 3px outset rgb(0, 0, 0);
+    padding: 5px;
+  }
+  .pftekst2 {
+    grid-area: pftekst2;
+    background-color: rgb(25, 108, 106);
+    border: 3px outset rgb(0, 0, 0);
+    padding: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 333px;
+  }
+  .pftekst3 {
+    grid-area: pftekst3;
+    background-color: rgb(25, 108, 106);
+    border: 3px outset rgb(0, 0, 0);
+    padding: 5px;
+  }
+  .pftekst4 {
+    grid-area: pftekst4;
+    background-color: rgb(25, 108, 106);
+    border: 3px outset rgb(0, 0, 0);
+    padding: 5px;
+  }
+
+  /*Grid oppsett for mindre andre enheter*/
+  @media (max-width: 600px) {
+    .grid-container {
+      display: grid;
+      gap: 10px;
+      height: 800px;
+      grid-auto-columns: minmax(0, 1fr);
+      grid-template-areas:  
+        'menu menu menu menu menu menu'
+        'header header header header header header' 
+        'tekst tekst tekst tekst tekst tekst'
+        'bilde bilde bilde bilde bilde bilde'
+        'left left left left left left' 
+        'middle middle middle middle middle middle'
+        'right right right right right right'
+        'footer footer footer footer footer footer';
+      justify-content: center;
+    }
+    .grid-container-kp {
+      display: grid;
+      gap: 10px;
+      height: 800px;
+      grid-auto-columns: minmax(0, 1fr);
+      grid-template-areas:  
+        'menu menu menu menu menu menu'
+        'header header header header header header' 
+        'pftekst pftekst pftekst pftekst pftekst pftekst'
+        'pfbilde pfbilde pfbilde pfbilde pfbilde pfbilde'
+        'pftekst2 pftekst2 pftekst2 pftekst2 pftekst2 pftekst2'
+        'pfbilde2 pfbilde2 pfbilde2 pfbilde2 pfbilde2 pfbilde2'
+        'pftekst3 pftekst3 pftekst3 pftekst3 pftekst3 pftekst3'
+        'pfbilde3 pfbilde3 pfbilde3 pfbilde3 pfbilde3 pfbilde3'
+        'footer footer footer footer footer footer';
+      justify-content: center;
+    }
+    .grid-container-pogh {
+      display: grid;
+      gap: 10px;
+      height: 100vh;
+      grid-auto-columns: minmax(0, 1fr);
+      grid-template-areas: 
+        'menu menu menu menu menu menu'
+        'header header header header header header' 
+        'pftekst pftekst pftekst pftekst pftekst pftekst'
+        'pfbilde pfbilde pfbilde pfbilde pfbilde pfbilde'
+        'pftekst2 pftekst2 pftekst2 pftekst2 pftekst2 pftekst2'
+        'pfbilde2 pfbilde2 pfbilde2 pfbilde2 pfbilde2 pfbilde2'
+        'pftekst3 pftekst3 pftekst3 pftekst3 pftekst3 pftekst3'
+        'pfbilde3 pfbilde3 pfbilde3 pfbilde3 pfbilde3 pfbilde3'
+        'footer footer footer footer footer footer';
+      justify-content: center;
+    }
+    .grid-container-tf {
+      display: grid;
+      gap: 10px;
+      height: 100vh;
+      grid-auto-columns: minmax(0, 1fr);
+      grid-template-areas: 
+        'menu menu menu menu menu menu'
+        'header header header header header header' 
+        'pftekst pftekst pftekst pftekst pftekst pftekst'
+        'pfbilde pfbilde pfbilde pfbilde pfbilde pfbilde'
+        'pftekst2 pftekst2 pftekst2 pftekst2 pftekst2 pftekst2'
+        'pfbilde2 pfbilde2 pfbilde2 pfbilde2 pfbilde2 pfbilde2'
+        'pftekst3 pftekst3 pftekst3 pfbilde3 pfbilde3 pfbilde3'
+        'footer footer footer footer footer footer';
+      justify-content: center;
+    }
+    
+  }
+
+  button {
+    padding: 10px;
+    height: 48px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgb(25, 108, 106);
+    border: 0px outset rgb(0, 0, 0);
+  }
+
+  .buttonsteinsakspapir {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(25, 108, 106);
+    background-image: url(./SteinSaksPapir/img/papir.jpg);
+    background-size: cover;
+    border: 1px outset rgb(0, 0, 0);
+  }
+  .buttonkp {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(25, 108, 106);
+    background-image: url(./img/nettsidekode.jpg);
+    background-size: cover;
+    border: 1px outset rgb(0, 0, 0);
+  }
+  .buttonpogh {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(25, 108, 106);
+    background-image: url(./img/IMG_3992.JPG);
+    background-size: cover;
+    border: 1px outset rgb(0, 0, 0);
+  }
+  .buttontekn {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(25, 108, 106);
+    background-image: url(https://images.unsplash.com/photo-1562408590-e32931084e23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    border: 1px outset rgb(0, 0, 0);
+  }
+  .buttonhjem {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(25, 108, 106);
+    background-image: url(./img/nettsidehjemside.jpg);
+    background-size: cover;
+    border: 1px outset rgb(0, 0, 0);
+  }
+
+  /*Meny*/
+
+    .dropbtn {
+      background-color: rgb(25, 108, 106);
+      background-image: url(./img/menu.png);
+      background-position: center;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: 3px outset rgb(0, 0, 0);
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgb(25, 108, 106);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      border: 3px outset rgb(0, 0, 0);
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      border: 1px outset rgb(0, 0, 0);
+      display: block;
+    }
+    .dropdown-content a:hover {background-color: rgb(4, 67, 50);
+      color: rgb(255, 255, 255);
+    }
+    .dropdown:hover .dropdown-content {display: block;
+    }
+    .dropdown:hover .dropbtn {background-color: rgb(4, 67, 50);
+    }
+    .dropdown:hover a.active {
+      background-color: #00a96b;
+      color: white;
+    }

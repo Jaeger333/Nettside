@@ -1,0 +1,106 @@
+
+body {
+    background-color: rgb(38, 121, 134);
+    margin: 20px;
+}
+
+h1 {
+    color: white;
+    text-align:center;
+    font-size: 60px;
+    margin:auto;
+}
+
+h2 {
+    color: white;
+    text-align:center;
+    font-size: 30px;
+    margin:auto;
+}
+h3 {
+    color: white;
+    text-align:center;
+    font-size: 25px;
+    margin:auto;
+}
+
+#gameContainer {
+    text-align: center;
+    font-family: "Franklin Gothic medium", "sans-serif";
+}
+
+#board {
+    width: 450px;
+    margin:auto;
+
+}
+
+#restartBtn {
+    background-color: rgb(3, 55, 44);
+    width: 100px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/*Styles til firkantene på brettet*/
+td {
+    width: 150px;
+    height: 150px;
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+/*Endre farge på firkanten når man holder over den*/
+td:hover {
+    background-color: #5b5353;
+}
+
+/*Meny*/
+
+.dropbtn {
+    background-color: rgb(25, 108, 106);
+    background-image: url(../img/menu.png);
+    background-position: center;
+    min-width: 50px;
+    min-height: 48px;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: 3px outset rgb(0, 0, 0);
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(25, 108, 106);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 3px outset rgb(0, 0, 0);
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    border: 1px outset rgb(0, 0, 0);
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: rgb(4, 67, 50);
+    color: rgb(255, 255, 255);
+  }
+  .dropdown:hover .dropdown-content {display: block;
+  }
+  .dropdown:hover .dropbtn {background-color: rgb(4, 67, 50);
+  }
+  .dropdown:hover a.active {
+    background-color: #00a96b;
+    color: white;
+  }
