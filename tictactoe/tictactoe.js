@@ -52,16 +52,31 @@ function checkWin() {
 }
 
 function scoreCounter() {
-    if (winner === "X") {
-        localStorage.scoreCountX = Number(localStorage.scoreCountX)+1;
+
+    if (isNaN(localStorage.scoreCountX)) {
+        localStorage.scoreCountX = 0
+    }
+    if (isNaN(localStorage.scoreCountO)) {
+        localStorage.scoreCountO = 0
+    }
+    if (isNaN(localStorage.scoreCountDraw)) {
+        localStorage.scoreCountDraw = 0
     }
 
-    if (winner === "O") {
-        localStorage.scoreCountO = Number(localStorage.scoreCountO)+1;
+    if (winner != "") {
+        if (winner === "X") {
+            localStorage.scoreCountX = Number(localStorage.scoreCountX)+1;
+        } else if (winner === "O") {
+            localStorage.scoreCountO = Number(localStorage.scoreCountO)+1;
+        } else if (winner === "draw") {
+            localStorage.scoreCountDraw = Number(localStorage.scoreCountDraw)+1;
+        }
     }
 
     document.getElementById("xScore").innerHTML = "X wins: " + localStorage.scoreCountX;
     document.getElementById("oScore").innerHTML = "O wins: " + localStorage.scoreCountO;
+    document.getElementById("drawScore").innerHTML = "Draw: " + localStorage.scoreCountDraw;
+    return;
 }
 
 
@@ -83,6 +98,8 @@ function handleSquareClick(e) {
         statusText.innerHTML = "Next move: " + currentPlayer;
     }
     if (gameEnd == false && move === 9) {
+        winner = "draw";
+        scoreCounter();
         gameEnd = true;
         statusText.innerHTML = "Draw";
     }
