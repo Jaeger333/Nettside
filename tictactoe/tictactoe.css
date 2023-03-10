@@ -24,6 +24,11 @@ h3 {
     margin:auto;
 }
 
+.score {
+  background-color: rgb(38, 121, 134);
+  margin: 20px;
+}
+
 #gameContainer {
     text-align: center;
     font-family: "Franklin Gothic medium", "sans-serif";
